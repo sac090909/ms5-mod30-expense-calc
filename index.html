@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <!-- Header -->
+      <h2 class="heading">Expense Calculator</h2>
+    </header>
+       <!-- Sections -->
+    <section class="expense-calc">
+      <div class="expense-div"><img src="images/money.jpg" alt="" /></div>
+      <div class="expense-div box-size">
+        <div class="input-div">
+            <!-- Income input-->
+            <h4 class="heading">Income</h4>
+            <span>Income</span>
+            <input type="text" name="" id="income" value="0" >
+           <!-- Expense input -->
+            <h4 class="heading">Expenses</h4>
+                <span>Food</span>
+            <input type="text" name="" id="food-expense" class="expense-item" value="0"><br>
+            <span class="expense-item">Rent</span>
+            <input type="text" name="" id="rent-expense" class="expense-item" value="0"> <br>
+            <span class="expense-item">Clothes</span>
+            <input type="text" name="" id="clothes-expense" class="expense-item" value="0"> <br>
+            <!-- Calculate expense balance -->
+            <button class="expense-item" id ='calculate-btn'>Calculate</button>
+            <p id ='msg-string'class="condition-text"> Please enter a valid positive numbers</p>
+            <p id ='msg-number'class="condition-text"> Please enter a positive number</p>
+            <p id ='msg-balance' class="condition-text"> Expense can't be more than income, <br>
+            please re-enter correct values</p>
+
+            <h4 class="heading">Total Expense:<span id="total-expense">0</span></h4>
+            <h4 class="heading">Balance: <span id="balance">0</span> </h2>
+               <!-- Saving input -->
+                <span> Income</span>
+                <input type="text" name="" id="income-percent" value="0"> <span class=>%</span> <button id="save-btn" class=>Save</button>
+                <p id="msg-saving" class="condition-text"> Saving can't be more than balance! <br> Please enter correct percent saving amount </p>
+               <!-- Calculate saving and remaining balance -->
+                <h4 class="heading">Saving Amount: <span id ='saving'>0</span></h4>
+                    <h4 class="heading">Remaining Balance: <span id="remaining-balance">0</span></h4>
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>

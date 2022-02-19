@@ -1,0 +1,46 @@
+.heading {
+  text-align: center;
+}
+
+.expense-calc {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.expense-div {
+  margin: 20px;
+}
+
+.box-size {
+  width: 423px;
+  height: 636px;
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+.input-div {
+  text-align: center;
+}
+
+.condition-text {
+  color: red;
+  font-weight: 700;
+  display: none;
+}
+
+.expense-item {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 645px) {
+  body {
+    background-color: rgba(222, 170, 135, 0.945);
+  }
+
+  .expense-calc {
+    display: flex;
+    flex-direction: column;
+  }
+}
